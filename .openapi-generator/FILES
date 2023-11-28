@@ -2,6 +2,7 @@
 README.md
 api.module.ts
 api/api.ts
+api/default.service.ts
 configuration.ts
 encoder.ts
 git_push.sh
@@ -9,6 +10,9 @@ index.ts
 model/badRequestError400Response.ts
 model/badRequestError400ResponseError.ts
 model/baseError.ts
+model/communicationResponseDto.ts
+model/createCommunication201Response.ts
+model/createCommunicationRequest.ts
 model/forbiddenError403Response.ts
 model/forbiddenError403ResponseError.ts
 model/internalServerError500Response.ts
