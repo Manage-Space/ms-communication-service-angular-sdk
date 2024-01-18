@@ -22,10 +22,14 @@ export interface CommunicationResponseDto {
     communicationType: CommunicationResponseDto.CommunicationTypeEnum;
 }
 export namespace CommunicationResponseDto {
-    export type CommunicationTypeEnum = 'moveOutConfirmation' | 'reservationConfirmation';
+    export type CommunicationTypeEnum = 'moveOutConfirmation' | 'reservationConfirmation' | 'delinquencyLate' | 'delinquencyOverlocked' | 'delinquencyLien' | 'delinquencyAuction';
     export const CommunicationTypeEnum = {
         MoveOutConfirmation: 'moveOutConfirmation' as CommunicationTypeEnum,
-        ReservationConfirmation: 'reservationConfirmation' as CommunicationTypeEnum
+        ReservationConfirmation: 'reservationConfirmation' as CommunicationTypeEnum,
+        DelinquencyLate: 'delinquencyLate' as CommunicationTypeEnum,
+        DelinquencyOverlocked: 'delinquencyOverlocked' as CommunicationTypeEnum,
+        DelinquencyLien: 'delinquencyLien' as CommunicationTypeEnum,
+        DelinquencyAuction: 'delinquencyAuction' as CommunicationTypeEnum
     };
 }
 
