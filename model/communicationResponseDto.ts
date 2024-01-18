@@ -16,5 +16,17 @@ export interface CommunicationResponseDto {
      * Communication id
      */
     communicationId: string;
+    /**
+     * Communication type.
+     */
+    communicationType: CommunicationResponseDto.CommunicationTypeEnum;
 }
+export namespace CommunicationResponseDto {
+    export type CommunicationTypeEnum = 'moveOutConfirmation' | 'reservationConfirmation';
+    export const CommunicationTypeEnum = {
+        MoveOutConfirmation: 'moveOutConfirmation' as CommunicationTypeEnum,
+        ReservationConfirmation: 'reservationConfirmation' as CommunicationTypeEnum
+    };
+}
+
 
